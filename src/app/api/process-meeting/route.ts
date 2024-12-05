@@ -12,7 +12,7 @@ const bodyParser = z.object({
 
 export const maxDuration = 300   // 5 minutes
 
-//apii/process-meeting
+//api/process-meeting
 export async function POST(req: NextRequest) {
   const { userId } = await auth()
   if(!userId) {
