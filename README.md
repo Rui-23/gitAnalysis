@@ -6,10 +6,10 @@ Built with cutting-edge technologies like Next.js, TypeScript, Prisma, and Clerk
 
 ## Screenshots
 
-![Screenshot 1](public/screenshot1.png)
+![Screenshot 1](public/Screenshot1.png)
 *Screeshot of project creation*
 
-![Screenshot 2](public/screenshot2.png)
+![Screenshot 2](public/Screenshot2.png)
 *Screenshot of Dashboard interface*
 
 ## Features
