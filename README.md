@@ -1,29 +1,122 @@
-# Create T3 App
+# Git Analysis
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+Git Analysis is a powerful tool that helps users efficiently manage their GitHub projects and meetings. With this application, users can simply input the URL of their GitHub project to initiate an intelligent process that streamlines project management and enhances collaboration. 
 
-## What's next? How do I make an app with this?
+Built with cutting-edge technologies like Next.js, TypeScript, Prisma, and Clerk, and powered by Gemini AI and AssemblyAI, Git Analysis is designed to provide a seamless and smart experience for developers and teams.
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+## Screenshots
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+![Screenshot 1](public/screenshot1.png)
+*Screeshot of project creation*
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+![Screenshot 2](public/screenshot2.png)
+*Screenshot of Dashboard interface*
 
-## Learn More
+## Features
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+- **Easy Integration**: Input your GitHub project URL to begin.
+- **AI-Powered Insights**: Utilize Gemini AI for advanced project analysis.
+- **Meeting Management**: Leverage AssemblyAI for automatic transcription and summarization of project-related meetings.
+- **Full-Stack Efficiency**: Built with Next.js and TypeScript for a scalable and robust application.
+- **Secure Access**: User authentication and session management powered by Clerk.
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+## Tech Stack
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+- **Frontend**: [Next.js](https://nextjs.org), [TypeScript](https://www.typescriptlang.org)
+- **Backend**: [Prisma](https://www.prisma.io) for database management
+- **Authentication**: [Clerk](https://clerk.dev)
+- **AI Services**:
+  - [Gemini AI](#) for intelligent project analysis
+  - [AssemblyAI](https://www.assemblyai.com) for meeting transcription and summarization
+- **Styling**: [Tailwind CSS](https://tailwindcss.com)
 
-## How do I deploy this?
+## Getting Started
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+Follow these steps to set up and run the project locally:
+
+### Prerequisites
+
+Ensure you have the following installed:
+
+- [Node.js](https://nodejs.org) (LTS version recommended)
+- [npm](https://www.npmjs.com) or [yarn](https://yarnpkg.com)
+- A GitHub account
+- A Clerk API key
+- A database connection string (supported by Prisma)
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Rui-23/gitAnalysis.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd gitAnalysis
+   ```
+
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+4. Set up environment variables:
+   - Copy the `.env.example` file to `.env`:
+     ```bash
+     cp .env.example .env
+     ```
+   - Add your environment-specific variables (e.g., Clerk API key, database URL).
+
+5. Initialize the database:
+   ```bash
+   npm run db:push
+   ```
+
+### Running the Application
+
+1. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+2. Open your browser and navigate to `http://localhost:3000`.
+
+## Usage
+
+1. Log in to the application using your Clerk credentials.
+2. Input the URL of a GitHub project you want to manage.
+3. Explore the AI-generated insights, manage meetings, and collaborate effectively.
+
+## Contributing
+
+We welcome contributions! Please follow these steps to contribute:
+
+1. Fork the repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m "Add your message here"
+   ```
+4. Push to the branch:
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+5. Open a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Acknowledgments
+
+- [Gemini AI](#) for powering intelligent project insights.
+- [AssemblyAI](https://www.assemblyai.com) for enhancing meeting management.
+- The developers and contributors of Next.js, Prisma, Clerk, and Tailwind CSS.
+
+---
+
+Happy coding! 🚀
